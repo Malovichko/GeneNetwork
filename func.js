@@ -14,6 +14,12 @@ function writeList(file) {
                 var reader = new FileReader();
                 reader.onloadend = function () {
                     p.innerHTML = reader.result;
+                    if (entry.filename == "CytoscapeSession-2020_10_29-20_35/views/8108-8118-string%2Dhl%2Dnew%2Dwith_regulators.tsv%281%29.xgmml") {
+                        console.log("Ahhhh");
+                        console.log(entry.filename);
+                        nodes = reader.result.split(/<node/);
+                        for (let i = 0; i < nodes.length; i++) console.log(nodes[i]);
+                    }
                 }
                 reader.readAsBinaryString(blob);
             }, function (current, total) {});
@@ -64,9 +70,9 @@ window.onload = function (e) {
 
     function createNetwork() {
         let network = new Network(1);
-//        console.log(network.getID());
+        //        console.log(network.getID());
         network.setAttribute("Pb|cka", 12);
-//        console.log(network.getAttributeFromName("Pb|cka"));
+        //        console.log(network.getAttributeFromName("Pb|cka"));
 
         let node = new Node(1);
         let node1 = new Node(2);
@@ -81,28 +87,27 @@ window.onload = function (e) {
         node2.setAttribute("width", 200);
         node2.setAttribute("height", 100);
 
-//        console.log( "id 1, 2 " + node.getID() + " " +  node1.getID());
-//        console.log(node.getAttributeFromName("name"));
+        //        console.log( "id 1, 2 " + node.getID() + " " +  node1.getID());
+        //        console.log(node.getAttributeFromName("name"));
 
         let edge = new Edge(node1, node, 1);
-//        console.log(edge.getID());
-//        console.log(edge.getSource());
-//        console.log(edge.getTarget());
+        //        console.log(edge.getID());
+        //        console.log(edge.getSource());
+        //        console.log(edge.getTarget());
 
         network.nodeArray.push(node1);
-//        console.log(network.nodeArray.includes(node1));
+        //        console.log(network.nodeArray.includes(node1));
 
         network.setNodeInArray(node);
         network.setNodeInArray(node2);
-//        console.log(network.isNodeIncluded(node));
-//        console.log(network.isNodeIncluded(node1));
-//        console.log(network.getNodeArray());
+        //        console.log(network.isNodeIncluded(node));
+        //        console.log(network.isNodeIncluded(node1));
+        //        console.log(network.getNodeArray());
         network.edgeArray.push(edge);
 
         console.log(node.getAdjacentVertexes());
         paintGraph(network);
-//        draw();
+        //        draw();
     }
     createNetwork();
 }
-
