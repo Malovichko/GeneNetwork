@@ -2,6 +2,7 @@ function writeList(file) {
     model.getEntries(file, function (entries) {
         fileList = document.getElementById('fileList');
         fileList.innerHTML = "";
+        let network = null;
         entries.forEach(function (entry) {
             var li = document.createElement("li");
             var a = document.createElement("a");
@@ -14,11 +15,72 @@ function writeList(file) {
                 var reader = new FileReader();
                 reader.onloadend = function () {
                     p.innerHTML = reader.result;
+                    if (entry.filename == "CytoscapeSession-2020_10_29-20_35/networks/998-string%2Dhl%2Dnew%2Dwith_regulators.tsv.xgmml") {
+                        network = new Network(1);
+
+                        pos = reader.result.indexOf("<edge");
+                        nodesAndEdges = [reader.result.substring(0, pos), reader.result.substring(pos)];
+                        nodes = nodesAndEdges[0].substring(nodesAndEdges[0].indexOf("<node") + 5).split("<node");
+                        for (i = 0; i < nodes.length; i++) {
+                            label = nodes[i];
+                            id = label.substring(label.indexOf("id=") + 4);
+                            id = parseInt(id.split("\"")[0]);
+                            label = label.substring(label.indexOf("label=") + 7);
+                            label = label.split("\"")[0];
+
+                            node = new Node(id);
+                            node.setAttribute('label', label);
+                            node.setAttribute('width', 40);
+                            node.setAttribute('height', 40);
+                            network.setNodeInArray(node);
+                        }
+
+                        edges = nodesAndEdges[1].substring(nodesAndEdges[1].indexOf("<edge") + 5).split("<edge");
+                        edges[edges.length - 1] = edges[edges.length - 1].split("/>")[0];
+                        for (i = 0; i < edges.length; i++) {
+                            id = edges[i];
+                            id = id.substring(id.indexOf("id=") + 4);
+                            id = parseInt(id.split("\"")[0]);
+
+                            idNode1 = edges[i];
+                            idNode1 = idNode1.substring(idNode1.indexOf("source=") + 8);
+                            idNode1 = parseInt(idNode1.split("\"")[0]);
+                            node1 = network.findNodeById(idNode1);
+
+                            idNode2 = edges[i];
+                            idNode2 = idNode2.substring(idNode2.indexOf("target=") + 8);
+                            idNode2 = parseInt(idNode2.split("\"")[0]);
+                            node2 = network.findNodeById(idNode2);
+
+                            edge = new Edge(node1, node2, id);
+                            network.setEdgeInArray(edge);
+                        }
+                    }
+
                     if (entry.filename == "CytoscapeSession-2020_10_29-20_35/views/8108-8118-string%2Dhl%2Dnew%2Dwith_regulators.tsv%281%29.xgmml") {
-                        console.log("Ahhhh");
-                        console.log(entry.filename);
-                        nodes = reader.result.split(/<node/);
-                        for (let i = 0; i < nodes.length; i++) console.log(nodes[i]);
+                        pos = reader.result.indexOf("<edge");
+                        nodesAndEdges = [reader.result.substring(0, pos), reader.result.substring(pos)];
+                        nodes = reader.result.substring(reader.result.indexOf("<node") + 5).split("<node");
+                        for (i = 0; i < nodes.length; i++) {
+                            label = nodes[i];
+                            id = label.substring(label.indexOf("nodeId=") + 8);
+                            id = parseInt(id.split("\"")[0]);
+
+                            x = label.substring(label.indexOf("x=") + 3);
+                            x = parseInt(x.split("\"")[0]);
+                            x = x / 8;
+
+                            y = label.substring(label.indexOf("y=") + 3);
+                            y = parseInt(y.split("\"")[0]);
+                            y = (y + 1200) / 4;
+
+                            node = network.findNodeById(id);
+                            node.setAttribute('x', x);
+                            node.setAttribute('y', y);
+                        }
+
+//                        paintGraph(network);
+                        testCSGraph(network);
                     }
                 }
                 reader.readAsBinaryString(blob);
@@ -106,8 +168,9 @@ window.onload = function (e) {
         network.edgeArray.push(edge);
 
         console.log(node.getAdjacentVertexes());
-        paintGraph(network);
+//        paintGraph(network);
+//     s  testCSGraph(network);
         //        draw();
     }
-    createNetwork();
+//    createNetwork();
 }

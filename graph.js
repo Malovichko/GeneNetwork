@@ -43,7 +43,15 @@ class Network {
     }
 
     getNetworkSize() {
-        return this.nodeArray.length();
+        return this.nodeArray.length;
+    }
+
+    findNodeById(id) {
+        let size = this.getNetworkSize();
+        for (let i = 0; i < size; i++)
+            if (this.nodeArray[i].getID() == id)
+                return this.nodeArray[i];
+        return null;
     }
 }
 
