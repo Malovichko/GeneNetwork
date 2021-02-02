@@ -1,0 +1,2377 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.8.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "string-hl-new-with_regulators.tsv(1)",
+    "name" : "string-hl-new-with_regulators.tsv(1)",
+    "SUID" : 61,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "113",
+        "shared_name" : "TZP",
+        "name" : "TZP",
+        "SUID" : 113,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3432.3311854871426,
+        "y" : 683.5993382793094
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "112",
+        "shared_name" : "PAP17",
+        "reg" : 2,
+        "name" : "PAP17",
+        "SUID" : 112,
+        "avg_score_x100" : 13.19,
+        "colors" : "8",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3912.9468394487194,
+        "y" : 95.6623598660808
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "111",
+        "shared_name" : "AT5G48560",
+        "name" : "AT5G48560",
+        "SUID" : 111,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3898.1096360095544,
+        "y" : -471.7116318131302
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "110",
+        "shared_name" : "PHYD",
+        "name" : "PHYD",
+        "SUID" : 110,
+        "ANNOT" : 4,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3871.3117024288804,
+        "y" : 212.9192584832199
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "109",
+        "shared_name" : "PRMT11",
+        "reg" : 3,
+        "name" : "PRMT11",
+        "SUID" : 109,
+        "avg_score_x100" : 10.99,
+        "colors" : "12",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2976.0806402672024,
+        "y" : -334.8623956529482
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "108",
+        "shared_name" : "PAP3",
+        "reg" : 1,
+        "name" : "PAP3",
+        "SUID" : 108,
+        "avg_score_x100" : 3.42,
+        "colors" : "2",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3661.9235876050807,
+        "y" : 0.36317772857728414
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "107",
+        "shared_name" : "AT1G25220",
+        "reg" : 1,
+        "name" : "AT1G25220",
+        "SUID" : 107,
+        "avg_score_x100" : 7.0,
+        "colors" : "3",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3943.1113848529058,
+        "y" : -58.1250568475225
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "106",
+        "shared_name" : "FCAALL.134",
+        "name" : "FCAALL.134",
+        "SUID" : 106,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3805.308630303756,
+        "y" : -667.7425921370159
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "105",
+        "shared_name" : "AT5G23280",
+        "reg" : 1,
+        "name" : "AT5G23280",
+        "SUID" : 105,
+        "avg_score_x100" : 2.62,
+        "colors" : "1",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 4218.852534558886,
+        "y" : -744.9849192878901
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "104",
+        "shared_name" : "PIF7",
+        "name" : "PIF7",
+        "SUID" : 104,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3948.8857032708474,
+        "y" : -180.77200113605068
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "103",
+        "shared_name" : "SAL1",
+        "reg" : 3,
+        "name" : "SAL1",
+        "SUID" : 103,
+        "avg_score_x100" : 2.46,
+        "ANNOT" : 2,
+        "colors" : "9",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3304.536422248624,
+        "y" : -777.3863860395213
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "102",
+        "shared_name" : "PAR1",
+        "reg" : 1,
+        "name" : "PAR1",
+        "SUID" : 102,
+        "avg_score_x100" : 3.37,
+        "colors" : "2",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2848.9410383166105,
+        "y" : -254.2989762842335
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "101",
+        "shared_name" : "WRKY18",
+        "reg" : 2,
+        "name" : "WRKY18",
+        "SUID" : 101,
+        "avg_score_x100" : 2.14,
+        "ANNOT" : 3,
+        "colors" : "5",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3941.3811930329393,
+        "y" : -284.7692114117526
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "100",
+        "shared_name" : "PYE",
+        "reg" : 1,
+        "name" : "PYE",
+        "SUID" : 100,
+        "avg_score_x100" : 8.99,
+        "colors" : "3",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3856.9026962333737,
+        "y" : -573.2084310209029
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "99",
+        "shared_name" : "PIN3",
+        "name" : "PIN3",
+        "SUID" : 99,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3424.8660548892803,
+        "y" : -1015.8412280531775
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "98",
+        "shared_name" : "ELF4",
+        "name" : "ELF4",
+        "SUID" : 98,
+        "ANNOT" : 2,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3309.911316279031,
+        "y" : 446.21082171991293
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "97",
+        "shared_name" : "TCP11",
+        "reg" : 1,
+        "name" : "TCP11",
+        "SUID" : 97,
+        "avg_score_x100" : 3.3,
+        "colors" : "2",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 4098.202588450396,
+        "y" : -687.7260898656095
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "96",
+        "shared_name" : "HBI1",
+        "reg" : 1,
+        "name" : "HBI1",
+        "SUID" : 96,
+        "avg_score_x100" : 4.41,
+        "colors" : "2",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2621.5556383182557,
+        "y" : -394.4268180529907
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "95",
+        "shared_name" : "LAF1",
+        "name" : "LAF1",
+        "SUID" : 95,
+        "ANNOT" : 5,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3343.583305014414,
+        "y" : -430.8935835149605
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "94",
+        "shared_name" : "AT5G35735",
+        "reg" : 2,
+        "name" : "AT5G35735",
+        "SUID" : 94,
+        "avg_score_x100" : 11.71,
+        "colors" : "8",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2834.126942072384,
+        "y" : -104.51417906837014
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "93",
+        "shared_name" : "ARR4",
+        "reg" : 1,
+        "name" : "ARR4",
+        "SUID" : 93,
+        "avg_score_x100" : 0.11,
+        "ANNOT" : 1,
+        "colors" : "1",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3695.1016119973356,
+        "y" : 483.83426358881115
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "92",
+        "shared_name" : "CLPB3",
+        "reg" : 3,
+        "name" : "CLPB3",
+        "SUID" : 92,
+        "avg_score_x100" : 4.93,
+        "colors" : "10",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3754.107679740089,
+        "y" : 413.60828454857983
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "91",
+        "shared_name" : "AT2G26190",
+        "reg" : 2,
+        "name" : "AT2G26190",
+        "SUID" : 91,
+        "avg_score_x100" : 6.93,
+        "colors" : "7",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3822.6729026477697,
+        "y" : 310.2302012298169
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "90",
+        "shared_name" : "SCL13",
+        "reg" : 2,
+        "name" : "SCL13",
+        "SUID" : 90,
+        "avg_score_x100" : 6.98,
+        "colors" : "7",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3617.4448054387467,
+        "y" : 558.7331877597608
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "89",
+        "shared_name" : "PIL5",
+        "reg" : 1,
+        "name" : "PIL5",
+        "SUID" : 89,
+        "avg_score_x100" : 2.22,
+        "ANNOT" : 3,
+        "colors" : "1",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3681.830569083395,
+        "y" : -176.13654265918012
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "88",
+        "shared_name" : "GBF2",
+        "reg" : 2,
+        "name" : "GBF2",
+        "SUID" : 88,
+        "avg_score_x100" : 0.22,
+        "ANNOT" : 3,
+        "colors" : "5",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3764.1806421017973,
+        "y" : -728.5657917082572
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "87",
+        "shared_name" : "PHYA",
+        "reg" : 3,
+        "name" : "PHYA",
+        "SUID" : 87,
+        "avg_score_x100" : 4.29,
+        "colors" : "10",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3358.9319860778487,
+        "y" : 81.10736851778347
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "86",
+        "shared_name" : "BHLH101",
+        "reg" : 3,
+        "name" : "BHLH101",
+        "SUID" : 86,
+        "avg_score_x100" : 6.1,
+        "colors" : "11",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3696.9782098870346,
+        "y" : -810.2349588239449
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "85",
+        "shared_name" : "BBX16",
+        "reg" : 3,
+        "name" : "BBX16",
+        "SUID" : 85,
+        "avg_score_x100" : 3.66,
+        "colors" : "10",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3608.843729647313,
+        "y" : -894.4825426040188
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "84",
+        "shared_name" : "CRY1",
+        "reg" : 1,
+        "name" : "CRY1",
+        "SUID" : 84,
+        "avg_score_x100" : 0.36,
+        "ANNOT" : 1,
+        "colors" : "1",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3373.659796924854,
+        "y" : 408.8649917344592
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "83",
+        "shared_name" : "PAT3",
+        "name" : "PAT3",
+        "SUID" : 83,
+        "ANNOT" : 3,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3192.801763368043,
+        "y" : -555.9640327410889
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "82",
+        "shared_name" : "CIB1",
+        "name" : "CIB1",
+        "SUID" : 82,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 4150.947471363863,
+        "y" : -557.8101868796366
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "81",
+        "shared_name" : "FHL",
+        "name" : "FHL",
+        "SUID" : 81,
+        "ANNOT" : 3,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3166.7888182631286,
+        "y" : -167.56816363683902
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "80",
+        "shared_name" : "PIF3",
+        "name" : "PIF3",
+        "SUID" : 80,
+        "ANNOT" : 5,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3676.4273217120935,
+        "y" : -251.01453405765642
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "79",
+        "shared_name" : "PHYB",
+        "name" : "PHYB",
+        "SUID" : 79,
+        "ANNOT" : 5,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3524.686345215261,
+        "y" : 273.1318097564945
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "78",
+        "shared_name" : "HFR1",
+        "reg" : 2,
+        "name" : "HFR1",
+        "SUID" : 78,
+        "avg_score_x100" : 1.82,
+        "ANNOT" : 1,
+        "colors" : "5",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3430.480755733879,
+        "y" : -219.0231848438416
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "77",
+        "shared_name" : "KDR",
+        "name" : "KDR",
+        "SUID" : 77,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3663.1223011083202,
+        "y" : -323.86174327706976
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "76",
+        "shared_name" : "AT3G01490",
+        "reg" : 3,
+        "name" : "AT3G01490",
+        "SUID" : 76,
+        "avg_score_x100" : 4.07,
+        "colors" : "10",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3682.324209074097,
+        "y" : -1173.4767918594298
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "75",
+        "shared_name" : "MPK19",
+        "reg" : 2,
+        "name" : "MPK19",
+        "SUID" : 75,
+        "avg_score_x100" : 2.72,
+        "colors" : "5",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3531.997712345561,
+        "y" : -952.7011669537169
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "74",
+        "shared_name" : "HY5",
+        "reg" : 2,
+        "name" : "HY5",
+        "SUID" : 74,
+        "avg_score_x100" : 8.63,
+        "ANNOT" : 1,
+        "colors" : "7",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3540.542313521277,
+        "y" : -581.6239437725599
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "73",
+        "shared_name" : "ACBP5",
+        "name" : "ACBP5",
+        "SUID" : 73,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2934.466055934463,
+        "y" : -3.5813746909843758
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "72",
+        "shared_name" : "ckl3",
+        "name" : "ckl3",
+        "SUID" : 72,
+        "colors" : "",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2840.11957223044,
+        "y" : 246.29594157419342
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "71",
+        "shared_name" : "ckl4",
+        "reg" : 1,
+        "name" : "ckl4",
+        "SUID" : 71,
+        "avg_score_x100" : 0.22,
+        "colors" : "1",
+        "selected" : false
+      },
+      "position" : {
+        "x" : 3031.0424518780783,
+        "y" : 3.687070607295027
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "178",
+        "source" : "113",
+        "target" : "98",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G43630.1",
+        "combined_score" : 0.534,
+        "node2_string_internal_id" : 618299,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 632439,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "TZP (interacts with) ELF4",
+        "database_annotated" : 0.0,
+        "name" : "TZP (interacts with) ELF4",
+        "interaction" : "interacts with",
+        "SUID" : 178,
+        "experimentally_determined_interaction" : 0.534,
+        "node2_external_id" : "3702.AT2G40080.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "177",
+        "source" : "112",
+        "target" : "107",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.96,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT3G17790.1",
+        "combined_score" : 0.8,
+        "node2_string_internal_id" : 610370,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 620993,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAP17 (interacts with) AT1G25230",
+        "database_annotated" : 0.8,
+        "name" : "PAP17 (interacts with) AT1G25230",
+        "interaction" : "interacts with",
+        "SUID" : 177,
+        "experimentally_determined_interaction" : 0.0,
+        "node2_external_id" : "3702.AT1G25230.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "176",
+        "source" : "112",
+        "target" : "108",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.963,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT3G17790.1",
+        "combined_score" : 0.8,
+        "node2_string_internal_id" : 609314,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 620993,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAP17 (interacts with) PAP3",
+        "database_annotated" : 0.8,
+        "name" : "PAP17 (interacts with) PAP3",
+        "interaction" : "interacts with",
+        "SUID" : 176,
+        "experimentally_determined_interaction" : 0.0,
+        "node2_external_id" : "3702.AT1G14700.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "175",
+        "source" : "111",
+        "target" : "74",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G48560.1",
+        "combined_score" : 0.491,
+        "node2_string_internal_id" : 629775,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 632984,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "AT5G48560 (interacts with) HY5",
+        "database_annotated" : 0.0,
+        "name" : "AT5G48560 (interacts with) HY5",
+        "interaction" : "interacts with",
+        "SUID" : 175,
+        "experimentally_determined_interaction" : 0.492,
+        "node2_external_id" : "3702.AT5G11260.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "174",
+        "source" : "111",
+        "target" : "82",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.785,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G48560.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 628135,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 632984,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "AT5G48560 (interacts with) CIB1",
+        "database_annotated" : 0.0,
+        "name" : "AT5G48560 (interacts with) CIB1",
+        "interaction" : "interacts with",
+        "SUID" : 174,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT4G34530.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "173",
+        "source" : "110",
+        "target" : "98",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G16250.1",
+        "combined_score" : 0.534,
+        "node2_string_internal_id" : 618299,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 626135,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYD (interacts with) ELF4",
+        "database_annotated" : 0.0,
+        "name" : "PHYD (interacts with) ELF4",
+        "interaction" : "interacts with",
+        "SUID" : 173,
+        "experimentally_determined_interaction" : 0.534,
+        "node2_external_id" : "3702.AT2G40080.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "172",
+        "source" : "110",
+        "target" : "108",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G16250.1",
+        "combined_score" : 0.564,
+        "node2_string_internal_id" : 609314,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 626135,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYD (interacts with) PAP3",
+        "database_annotated" : 0.0,
+        "name" : "PHYD (interacts with) PAP3",
+        "interaction" : "interacts with",
+        "SUID" : 172,
+        "experimentally_determined_interaction" : 0.564,
+        "node2_external_id" : "3702.AT1G14700.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "171",
+        "source" : "110",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G16250.1",
+        "combined_score" : 0.564,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 626135,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYD (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "PHYD (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 171,
+        "experimentally_determined_interaction" : 0.564,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "170",
+        "source" : "110",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.981,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G16250.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 626135,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYD (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "PHYD (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 170,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "169",
+        "source" : "108",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G14700.1",
+        "combined_score" : 0.562,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 609314,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAP3 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PAP3 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 169,
+        "experimentally_determined_interaction" : 0.562,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "168",
+        "source" : "108",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G14700.1",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 609314,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAP3 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "PAP3 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 168,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "167",
+        "source" : "108",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G14700.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 609314,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAP3 (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "PAP3 (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 167,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "166",
+        "source" : "107",
+        "target" : "108",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.966,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G25230.1",
+        "combined_score" : 0.8,
+        "node2_string_internal_id" : 609314,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 610370,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "AT1G25230 (interacts with) PAP3",
+        "database_annotated" : 0.8,
+        "name" : "AT1G25230 (interacts with) PAP3",
+        "interaction" : "interacts with",
+        "SUID" : 166,
+        "experimentally_determined_interaction" : 0.0,
+        "node2_external_id" : "3702.AT1G14700.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "165",
+        "source" : "105",
+        "target" : "97",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.955,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G23280.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 629502,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 630930,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "AT5G23280 (interacts with) TCP11",
+        "database_annotated" : 0.0,
+        "name" : "AT5G23280 (interacts with) TCP11",
+        "interaction" : "interacts with",
+        "SUID" : 165,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT5G08330.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "164",
+        "source" : "104",
+        "target" : "89",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.632,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G61270.1",
+        "combined_score" : 0.564,
+        "node2_string_internal_id" : 616174,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 634356,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIF7 (interacts with) PIL5",
+        "database_annotated" : 0.0,
+        "name" : "PIF7 (interacts with) PIL5",
+        "interaction" : "interacts with",
+        "SUID" : 164,
+        "experimentally_determined_interaction" : 0.564,
+        "node2_external_id" : "3702.AT2G20180.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "163",
+        "source" : "104",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.642,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G61270.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 634356,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIF7 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "PIF7 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 163,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "162",
+        "source" : "104",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G61270.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 634356,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIF7 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "PIF7 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 162,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "161",
+        "source" : "103",
+        "target" : "99",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G63980.1",
+        "combined_score" : 0.45,
+        "node2_string_internal_id" : 613894,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 634640,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "SAL1 (interacts with) PIN3",
+        "database_annotated" : 0.0,
+        "name" : "SAL1 (interacts with) PIN3",
+        "interaction" : "interacts with",
+        "SUID" : 161,
+        "experimentally_determined_interaction" : 0.45,
+        "node2_external_id" : "3702.AT1G70940.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "160",
+        "source" : "103",
+        "target" : "83",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G63980.1",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 618046,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 634640,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "SAL1 (interacts with) PAT3",
+        "database_annotated" : 0.0,
+        "name" : "SAL1 (interacts with) PAT3",
+        "interaction" : "interacts with",
+        "SUID" : 160,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT2G37678.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "159",
+        "source" : "102",
+        "target" : "96",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G42870.1",
+        "combined_score" : 0.562,
+        "node2_string_internal_id" : 615986,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618603,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAR1 (interacts with) HBI1",
+        "database_annotated" : 0.0,
+        "name" : "PAR1 (interacts with) HBI1",
+        "interaction" : "interacts with",
+        "SUID" : 159,
+        "experimentally_determined_interaction" : 0.562,
+        "node2_external_id" : "3702.AT2G18300.3",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "158",
+        "source" : "101",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G31800.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 627832,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "WRKY18 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "WRKY18 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 158,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "157",
+        "source" : "98",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G40080.1",
+        "combined_score" : 0.534,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618299,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "ELF4 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "ELF4 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 157,
+        "experimentally_determined_interaction" : 0.534,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "156",
+        "source" : "98",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G40080.1",
+        "combined_score" : 0.534,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618299,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "ELF4 (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "ELF4 (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 156,
+        "experimentally_determined_interaction" : 0.534,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "155",
+        "source" : "97",
+        "target" : "100",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G08330.1",
+        "combined_score" : 0.762,
+        "node2_string_internal_id" : 622906,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629502,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "TCP11 (interacts with) PYE",
+        "database_annotated" : 0.0,
+        "name" : "TCP11 (interacts with) PYE",
+        "interaction" : "interacts with",
+        "SUID" : 155,
+        "experimentally_determined_interaction" : 0.762,
+        "node2_external_id" : "3702.AT3G47640.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "154",
+        "source" : "95",
+        "target" : "83",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G25560.1",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 618046,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 627151,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "LAF1 (interacts with) PAT3",
+        "database_annotated" : 0.0,
+        "name" : "LAF1 (interacts with) PAT3",
+        "interaction" : "interacts with",
+        "SUID" : 154,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT2G37678.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "153",
+        "source" : "95",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G25560.1",
+        "combined_score" : 0.655,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 627151,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "LAF1 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "LAF1 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 153,
+        "experimentally_determined_interaction" : 0.655,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "152",
+        "source" : "92",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G15450.1",
+        "combined_score" : 0.566,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 630168,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "CLPB3 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "CLPB3 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 152,
+        "experimentally_determined_interaction" : 0.566,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "151",
+        "source" : "91",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G26190.1",
+        "combined_score" : 0.566,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616813,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "AT2G26190 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "AT2G26190 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 151,
+        "experimentally_determined_interaction" : 0.566,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "150",
+        "source" : "90",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G17230.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 626244,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "SCL13 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "SCL13 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 150,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "149",
+        "source" : "89",
+        "target" : "108",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G20180.2",
+        "combined_score" : 0.564,
+        "node2_string_internal_id" : 609314,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616174,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIL5 (interacts with) PAP3",
+        "database_annotated" : 0.0,
+        "name" : "PIL5 (interacts with) PAP3",
+        "interaction" : "interacts with",
+        "SUID" : 149,
+        "experimentally_determined_interaction" : 0.564,
+        "node2_external_id" : "3702.AT1G14700.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "148",
+        "source" : "89",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.657,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G20180.2",
+        "combined_score" : 0.564,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616174,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIL5 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "PIL5 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 148,
+        "experimentally_determined_interaction" : 0.564,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "147",
+        "source" : "89",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G20180.2",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616174,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIL5 (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "PIL5 (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 147,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "146",
+        "source" : "89",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G20180.2",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616174,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIL5 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "PIL5 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 146,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "145",
+        "source" : "89",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.653,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G20180.2",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616174,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIL5 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PIL5 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 145,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "144",
+        "source" : "87",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G09570.1",
+        "combined_score" : 0.562,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 608751,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYA (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PHYA (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 144,
+        "experimentally_determined_interaction" : 0.562,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "143",
+        "source" : "87",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G09570.1",
+        "combined_score" : 0.95,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 608751,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYA (interacts with) PIF3",
+        "database_annotated" : 0.8,
+        "name" : "PHYA (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 143,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "142",
+        "source" : "84",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G08920.1",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 625306,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "CRY1 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "CRY1 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 142,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "141",
+        "source" : "84",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT4G08920.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 625306,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "CRY1 (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "CRY1 (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 141,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "140",
+        "source" : "83",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G37678.1",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618046,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAT3 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PAT3 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 140,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "139",
+        "source" : "83",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G37678.1",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618046,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAT3 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "PAT3 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 139,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "138",
+        "source" : "83",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G37678.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 618046,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PAT3 (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "PAT3 (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 138,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "137",
+        "source" : "81",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G02200.2",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 628856,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "FHL (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "FHL (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 137,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "136",
+        "source" : "81",
+        "target" : "95",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G02200.2",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 627151,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 628856,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "FHL (interacts with) LAF1",
+        "database_annotated" : 0.0,
+        "name" : "FHL (interacts with) LAF1",
+        "interaction" : "interacts with",
+        "SUID" : 136,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT4G25560.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "135",
+        "source" : "81",
+        "target" : "83",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.708,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G02200.2",
+        "combined_score" : 0.655,
+        "node2_string_internal_id" : 618046,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 628856,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "FHL (interacts with) PAT3",
+        "database_annotated" : 0.0,
+        "name" : "FHL (interacts with) PAT3",
+        "interaction" : "interacts with",
+        "SUID" : 135,
+        "experimentally_determined_interaction" : 0.655,
+        "node2_external_id" : "3702.AT2G37678.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "134",
+        "source" : "81",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G02200.2",
+        "combined_score" : 0.715,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 628856,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "FHL (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "FHL (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 134,
+        "experimentally_determined_interaction" : 0.715,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "133",
+        "source" : "80",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.662,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G09530.2",
+        "combined_score" : 0.562,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 608747,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PIF3 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PIF3 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 133,
+        "experimentally_determined_interaction" : 0.562,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "132",
+        "source" : "79",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G18790.1",
+        "combined_score" : 0.562,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616034,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYB (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "PHYB (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 132,
+        "experimentally_determined_interaction" : 0.562,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "131",
+        "source" : "79",
+        "target" : "108",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G18790.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 609314,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616034,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYB (interacts with) PAP3",
+        "database_annotated" : 0.0,
+        "name" : "PHYB (interacts with) PAP3",
+        "interaction" : "interacts with",
+        "SUID" : 131,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT1G14700.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "130",
+        "source" : "79",
+        "target" : "87",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.949,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G18790.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 608751,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616034,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYB (interacts with) PHYA",
+        "database_annotated" : 0.0,
+        "name" : "PHYB (interacts with) PHYA",
+        "interaction" : "interacts with",
+        "SUID" : 130,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G09570.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "129",
+        "source" : "79",
+        "target" : "93",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G18790.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 608850,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616034,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYB (interacts with) ARR4",
+        "database_annotated" : 0.0,
+        "name" : "PHYB (interacts with) ARR4",
+        "interaction" : "interacts with",
+        "SUID" : 129,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G10470.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "128",
+        "source" : "79",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT2G18790.1",
+        "combined_score" : 0.95,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 616034,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "PHYB (interacts with) PIF3",
+        "database_annotated" : 0.8,
+        "name" : "PHYB (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 128,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "127",
+        "source" : "77",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT1G26945.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 610509,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "KDR (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "KDR (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 127,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "126",
+        "source" : "75",
+        "target" : "76",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.572,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT3G14720.1",
+        "combined_score" : 0.906,
+        "node2_string_internal_id" : 619228,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 620655,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "MPK19 (interacts with) AT3G01490",
+        "database_annotated" : 0.9,
+        "name" : "MPK19 (interacts with) AT3G01490",
+        "interaction" : "interacts with",
+        "SUID" : 126,
+        "experimentally_determined_interaction" : 0.108,
+        "node2_external_id" : "3702.AT3G01490.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "125",
+        "source" : "74",
+        "target" : "100",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.491,
+        "node2_string_internal_id" : 622906,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) PYE",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) PYE",
+        "interaction" : "interacts with",
+        "SUID" : 125,
+        "experimentally_determined_interaction" : 0.492,
+        "node2_external_id" : "3702.AT3G47640.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "124",
+        "source" : "74",
+        "target" : "88",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.491,
+        "node2_string_internal_id" : 624734,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) GBF2",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) GBF2",
+        "interaction" : "interacts with",
+        "SUID" : 124,
+        "experimentally_determined_interaction" : 0.492,
+        "node2_external_id" : "3702.AT4G01120.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "123",
+        "source" : "74",
+        "target" : "86",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.491,
+        "node2_string_internal_id" : 629065,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) BHLH101",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) BHLH101",
+        "interaction" : "interacts with",
+        "SUID" : 123,
+        "experimentally_determined_interaction" : 0.492,
+        "node2_external_id" : "3702.AT5G04150.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "122",
+        "source" : "74",
+        "target" : "85",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.496,
+        "node2_string_internal_id" : 614190,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) BBX16",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) BBX16",
+        "interaction" : "interacts with",
+        "SUID" : 122,
+        "experimentally_determined_interaction" : 0.496,
+        "node2_external_id" : "3702.AT1G73870.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "121",
+        "source" : "74",
+        "target" : "75",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.545,
+        "node2_string_internal_id" : 620655,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) MPK19",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) MPK19",
+        "interaction" : "interacts with",
+        "SUID" : 121,
+        "experimentally_determined_interaction" : 0.545,
+        "node2_external_id" : "3702.AT3G14720.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "120",
+        "source" : "74",
+        "target" : "78",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 607982,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) HFR1",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) HFR1",
+        "interaction" : "interacts with",
+        "SUID" : 120,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT1G02340.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "119",
+        "source" : "74",
+        "target" : "95",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.558,
+        "node2_string_internal_id" : 627151,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) LAF1",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) LAF1",
+        "interaction" : "interacts with",
+        "SUID" : 119,
+        "experimentally_determined_interaction" : 0.558,
+        "node2_external_id" : "3702.AT4G25560.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "118",
+        "source" : "74",
+        "target" : "106",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 625991,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) FCAALL.134",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) FCAALL.134",
+        "interaction" : "interacts with",
+        "SUID" : 118,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT4G15090.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "117",
+        "source" : "74",
+        "target" : "89",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 616174,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) PIL5",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) PIL5",
+        "interaction" : "interacts with",
+        "SUID" : 117,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT2G20180.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "116",
+        "source" : "74",
+        "target" : "80",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.752,
+        "node2_string_internal_id" : 608747,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) PIF3",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) PIF3",
+        "interaction" : "interacts with",
+        "SUID" : 116,
+        "experimentally_determined_interaction" : 0.752,
+        "node2_external_id" : "3702.AT1G09530.2",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "115",
+        "source" : "74",
+        "target" : "79",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G11260.1",
+        "combined_score" : 0.765,
+        "node2_string_internal_id" : 616034,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 629775,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "HY5 (interacts with) PHYB",
+        "database_annotated" : 0.0,
+        "name" : "HY5 (interacts with) PHYB",
+        "interaction" : "interacts with",
+        "SUID" : 115,
+        "experimentally_determined_interaction" : 0.765,
+        "node2_external_id" : "3702.AT2G18790.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "114",
+        "source" : "73",
+        "target" : "72",
+        "neighborhood_on_chromosome" : 0,
+        "homology" : 0.0,
+        "shared_interaction" : "interacts with",
+        "node1_external_id" : "3702.AT5G27630.1",
+        "combined_score" : 0.611,
+        "node2_string_internal_id" : 627518,
+        "phylogenetic_cooccurrence" : 0,
+        "node1_string_internal_id" : 631365,
+        "automated_textmining" : 0,
+        "gene_fusion" : 0,
+        "shared_name" : "ACBP5 (interacts with) ckl3",
+        "database_annotated" : 0.0,
+        "name" : "ACBP5 (interacts with) ckl3",
+        "interaction" : "interacts with",
+        "SUID" : 114,
+        "experimentally_determined_interaction" : 0.611,
+        "node2_external_id" : "3702.AT4G28880.1",
+        "coexpression" : 0,
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}

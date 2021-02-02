@@ -55,7 +55,9 @@
 //  }
 //
 //});
+function drawGraphFromJSON() {
 
+}
 function testCSGraph(network) {
     let nodeArray = network.getNodeArray();
     let edgeArray = network.getEdgeArray();
@@ -65,19 +67,24 @@ function testCSGraph(network) {
     {
       selector: 'node',
       style: {
-        'label': 'data(name)'
+        'label': 'data(name)',
+          "text-valign": "center",
+            "text-halign": "center"
       }
     }
   ]
         });
+
     nodeArray.forEach(function (item, i, nodeArray) {
        cy.add({
     group: 'nodes',
            data: { id: item.getID(),
-                  name : item.getAttributeFromName('label'),
-                weight: item.getAttributeFromName('width')  },
+                  name : item.getAttributeFromName('name'),
+//                weight: item.getAttributeFromName('width')
+                 },
+           position: { x: item.getAttributeFromName('x'), y: item.getAttributeFromName('y') }
 });
-        console.log(item.getID() + " " + item.getAttributeFromName('label'));
+        console.log(item.getID() + " " + item.getAttributeFromName('name'));
     });
     edgeArray.forEach(function (item, i, edgeArray) {
        cy.add({
@@ -85,14 +92,19 @@ function testCSGraph(network) {
            data: { id: item.getID(),
                   source: item.getSource().getID(),
                   target: item.getTarget().getID(),
-                  name : item.getAttributeFromName('label')}
+                  name : item.getAttributeFromName('name')}
 });
         console.log(item.getID() + " " + item.getSource().getID() + " " + item.getTarget().getID());
     });
-    var layout = cy.layout({
-  name: 'random'
-});
+    cy.ready(() => {
+      cy.center();
+      cy.fit();
+      cy.resize();
+    });
+//    var layout = cy.layout({
+//  name: 'circle'
+//});
 
-layout.run();
+//layout.run();
 }
 

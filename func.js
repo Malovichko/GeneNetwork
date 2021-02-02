@@ -3,6 +3,7 @@ function writeList(file) {
         fileList = document.getElementById('fileList');
         fileList.innerHTML = "";
         let network = null;
+        nodeAttrMap = new Map();
         entries.forEach(function (entry) {
             var li = document.createElement("li");
             var a = document.createElement("a");
@@ -55,6 +56,7 @@ function writeList(file) {
                             edge = new Edge(node1, node2, id);
                             network.setEdgeInArray(edge);
                         }
+//                        testCSGraph(network);
                     }
 
                     if (entry.filename == "CytoscapeSession-2020_10_29-20_35/views/8108-8118-string%2Dhl%2Dnew%2Dwith_regulators.tsv%281%29.xgmml") {
@@ -81,6 +83,20 @@ function writeList(file) {
 
 //                        paintGraph(network);
                         testCSGraph(network);
+                    }
+
+                    if (entry.filename == "CytoscapeSession-2020_10_29-20_35/tables/998-string%2Dhl%2Dnew%2Dwith_regulators.tsv/SHARED_ATTRS-org.cytoscape.model.CyNode-998+shared+node.cytable") {
+                        pos = reader.result.indexOf("\n");
+                        pos2 = pos+1+reader.result.substring(pos+1).indexOf("\n");
+                        attributes = reader.result.substring(pos+1, pos2).split(",");
+                        for (i = 0; i < attributes.length; i++) {
+                            attribute = attributes[i];
+                            nodeAttrMap.set(attribute);
+                        }
+
+//                        console.log(reader.result.substring(pos+1, pos2));
+                       // nodeAttrMap.set();
+
                     }
                 }
                 reader.readAsBinaryString(blob);
