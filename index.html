@@ -11,11 +11,13 @@
     <script src="/lib/zip.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
 
-    <script type="module">
-        import cytoscape from "./lib/cytoscape.esm.min.js";
-</script>
     <script src="/lib/cytoscape.min.js"></script>
 
+    <script src="/lib/dagre.js"></script>
+    <script src="/lib/cytoscape-dagre.js"></script>
+
+    <script src="/lib/cola.min.js"></script>
+	<script src="/lib/cytoscape-cola.js"></script>
 </head>
 
 <style>
@@ -28,22 +30,29 @@
 
 <body>
     <!--onload="draw();"-->
-    <h1>.cys file</h1>
-    <input type="file" id="fileInput">
-    <ul id="fileList"></ul>
+    <div id="menu">
+        <h1>.cys file</h1>
+        <input type="file" id="fileInput" accept=".cys">
+        <ul id="fileList"></ul>
 
-    <h2> .nwk file</h2>
-    <input type="file" id="file-input" />
-<!--    <script>document.getElementById('file-input').addEventListener('change', readSingleFile, false);</script>-->
-    <h3>Contents of the file:</h3>
+        <h2> .json file</h2>
+        <input type="file" id="file-input" accept=".json">
+    <!--    <script>document.getElementById('file-input').addEventListener('change', readSingleFile, false);</script>-->
+
+        <h2> .nwk file</h2>
+        <input type="file" id="nwk-input" accept=".nwk">
+    </div>
+    
+    <!-- <h3>Contents of the file:</h3>
     <pre id="file-content"></pre>
+    <input type="file" id="jsonFileInput"> -->
+    <!-- <ul id="jsonFile"></ul> -->
 
-    <input type="file" id="jsonFileInput">
-    <ul id="jsonFile"></ul>
     <div id="cy"></div>
 
     <script src="/drawGraph.js" type="text/javascript"></script>
     <script src="/readJSON.js" type="text/javascript"></script>
+    <script src="/readNWK.js" type="text/javascript"></script>
 
 </body>
 

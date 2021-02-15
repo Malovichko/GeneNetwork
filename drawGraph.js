@@ -61,50 +61,80 @@ function drawGraphFromJSON() {
 function testCSGraph(network) {
     let nodeArray = network.getNodeArray();
     let edgeArray = network.getEdgeArray();
+    let curve_style = '';
+    let layout_style = '';
+
+    if (network.getAttributeFromName('type') == 'nwk') {
+      curve_style = 'taxi';
+      layout_style = 'dagre';
+    }
+
     var cy = cytoscape({
         container: document.getElementById('cy'),
         style: [
-    {
-      selector: 'node',
-      style: {
-        'label': 'data(name)',
-          "text-valign": "center",
-            "text-halign": "center"
-      }
-    }
-  ]
+          {
+            selector: 'node',
+            style: {
+              'label': 'data(name)',
+              "text-valign": "center",
+              "text-halign": "center"
+            }
+          },
+
+          {
+            selector: 'edge',
+            style: {
+              // 'width': 3,
+              // 'line-color': '#ccc',
+              // 'target-arrow-color': '#ccc',
+              // 'target-arrow-shape': 'triangle',
+              'curve-style': curve_style
+            }
+          }
+        ],
+      });
+    
+      nodeArray.forEach(function (item, i, nodeArray) {
+        cy.add({
+          group: 'nodes',
+          data: {
+            id: item.getID(),
+            name : item.getAttributeFromName('name'),
+            // weight: item.getAttributeFromName('width')
+          },
+          position: { x: item.getAttributeFromName('x'), y: item.getAttributeFromName('y') }
         });
-
-    nodeArray.forEach(function (item, i, nodeArray) {
-       cy.add({
-    group: 'nodes',
-           data: { id: item.getID(),
-                  name : item.getAttributeFromName('name'),
-//                weight: item.getAttributeFromName('width')
-                 },
-           position: { x: item.getAttributeFromName('x'), y: item.getAttributeFromName('y') }
-});
+        if (layout_style == '' && (item.getAttributeFromName('x') == undefined || item.getAttributeFromName('y') == undefined)) layout_style = 'cola';
         console.log(item.getID() + " " + item.getAttributeFromName('name'));
-    });
-    edgeArray.forEach(function (item, i, edgeArray) {
-       cy.add({
-    group: 'edges',
-           data: { id: item.getID(),
-                  source: item.getSource().getID(),
-                  target: item.getTarget().getID(),
-                  name : item.getAttributeFromName('name')}
-});
+      });
+ 
+      edgeArray.forEach(function (item) {
+        cy.add({
+          group: 'edges',
+          data: {
+            id: item.getID(),
+            source: item.getSource().getID(),
+            target: item.getTarget().getID(),
+            name : item.getAttributeFromName('name')
+          }
+        });
         console.log(item.getID() + " " + item.getSource().getID() + " " + item.getTarget().getID());
-    });
-    cy.ready(() => {
-      cy.center();
-      cy.fit();
-      cy.resize();
-    });
-//    var layout = cy.layout({
-//  name: 'circle'
-//});
+      });
+      cy.ready(() => {
+        cy.center();
+        cy.fit();
+        cy.resize();
+      });
 
-//layout.run();
+      if (layout_style != '') {
+        var layout = cy.layout({
+          name: layout_style
+         });
+         
+          layout.run();
+      }
+      
+      document.getElementsByTagName('input').forEach(element => {
+        if (element.getAttribute('type') == 'file') element.value = '';
+      });
 }
-

@@ -82,8 +82,6 @@ function displayContents(contents) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
-
-    console.log(network);
     testCSGraph(network);
 //    node = data.elements.nodes[0].data;
 //    console.log(node);
