@@ -58,6 +58,9 @@
 function drawGraphFromJSON() {
 
 }
+
+let selection = new Set();;
+let cy = null;
 function testCSGraph(network) {
     let nodeArray = network.getNodeArray();
     let edgeArray = network.getEdgeArray();
@@ -69,7 +72,7 @@ function testCSGraph(network) {
       layout_style = 'dagre';
     }
 
-    var cy = cytoscape({
+    cy = cytoscape({
         container: document.getElementById('cy'),
         style: [
           {
@@ -105,7 +108,7 @@ function testCSGraph(network) {
           position: { x: item.getAttributeFromName('x'), y: item.getAttributeFromName('y') }
         });
         if (layout_style == '' && (item.getAttributeFromName('x') == undefined || item.getAttributeFromName('y') == undefined)) layout_style = 'cola';
-        console.log(item.getID() + " " + item.getAttributeFromName('name'));
+        // console.log(item.getID() + " " + item.getAttributeFromName('name'));
       });
  
       edgeArray.forEach(function (item) {
@@ -118,7 +121,7 @@ function testCSGraph(network) {
             name : item.getAttributeFromName('name')
           }
         });
-        console.log(item.getID() + " " + item.getSource().getID() + " " + item.getTarget().getID());
+        // console.log(item.getID() + " " + item.getSource().getID() + " " + item.getTarget().getID());
       });
       cy.ready(() => {
         cy.center();
@@ -137,4 +140,27 @@ function testCSGraph(network) {
       document.getElementsByTagName('input').forEach(element => {
         if (element.getAttribute('type') == 'file') element.value = '';
       });
+
+      let handler_reset = function(event){
+        selection = new Set();
+        console.log(selection);
+      };
+      cy.on('tap', handler_reset);
+
+      let handler_select = function(event){
+        selection.add(event.target);
+        // selection = event.target;
+      };
+      cy.on('select', handler_select);
 }
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Delete') {
+    if (selection != cy && selection != null) {
+      selection.forEach(el => {
+        cy.remove(el);
+      })
+      selection = new Set();
+    }
+  }
+});

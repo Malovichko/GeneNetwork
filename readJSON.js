@@ -60,8 +60,8 @@ function displayContents(contents) {
         //node.setAttribute('height', 40);
         node.setAttribute(entriesPos[0][0], entriesPos[0][1]);
         node.setAttribute(entriesPos[1][0], entriesPos[1][1]);
-        console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
-        console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
+        // console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
+        // console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
         network.setNodeInArray(node);
     }
 
