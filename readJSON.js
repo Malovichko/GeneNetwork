@@ -1,27 +1,3 @@
-//function writeList(file) {
-//    model.getEntries(file, function (entries) {
-//        fileList = document.getElementById('fileList');
-//        fileList.innerHTML = "";
-//        let network = null;
-//    }
-//
-//function readFile(input) {
-//  let file = input.files[0];
-//
-//  let reader = new FileReader();
-//
-//  reader.readAsText(file);
-//
-//  reader.onload = function() {
-//    console.log(reader.result);
-//  };
-//
-//  reader.onerror = function() {
-//    console.log(reader.error);
-//  };
-//
-//}
-
 function readSingleFile(e) {
     var file = e.target.files[0];
     var contents = null;
@@ -60,8 +36,8 @@ function displayContents(contents) {
         //node.setAttribute('height', 40);
         node.setAttribute(entriesPos[0][0], entriesPos[0][1]);
         node.setAttribute(entriesPos[1][0], entriesPos[1][1]);
-        // console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
-        // console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
+        console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
+        console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
         network.setNodeInArray(node);
     }
 
@@ -82,6 +58,8 @@ function displayContents(contents) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
+
+    console.log(network);
     testCSGraph(network);
 //    node = data.elements.nodes[0].data;
 //    console.log(node);
