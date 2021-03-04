@@ -66,3 +66,5 @@ function displayContentsNWK(contents) {
     // paintGraph(network);
     testCSGraph(network);
 }
+
+document.getElementById('nwk-input').addEventListener('change', readSingleFileNWK);

@@ -56,7 +56,7 @@ function writeList(file) {
                             edge = new Edge(node1, node2, id);
                             network.setEdgeInArray(edge);
                         }
-//                        testCSGraph(network);
+                        testCSGraph(network);
                     }
 
                     if (entry.filename == "CytoscapeSession-2020_10_29-20_35/views/8108-8118-string%2Dhl%2Dnew%2Dwith_regulators.tsv%281%29.xgmml") {
@@ -141,52 +141,4 @@ function getFile(e) {
     }
 }
 
-window.onload = function (e) {
-    zip.workerScriptsPath = "/lib/";
-    button = document.getElementById('fileInput');
-    button.addEventListener('change', getFile);
-
-    function createNetwork() {
-        let network = new Network(1);
-        //        console.log(network.getID());
-        network.setAttribute("Pb|cka", 12);
-        //        console.log(network.getAttributeFromName("Pb|cka"));
-
-        let node = new Node(1);
-        let node1 = new Node(2);
-        let node2 = new Node(3);
-        node.setAttribute("name", "Seq12");
-        node.setAttribute("width", 200);
-        node.setAttribute("height", 100);
-        node1.setAttribute("name", "Arn34");
-        node1.setAttribute("width", 200);
-        node1.setAttribute("height", 100);
-        node2.setAttribute("name", "Ghy0");
-        node2.setAttribute("width", 200);
-        node2.setAttribute("height", 100);
-
-        //        console.log( "id 1, 2 " + node.getID() + " " +  node1.getID());
-        //        console.log(node.getAttributeFromName("name"));
-
-        let edge = new Edge(node1, node, 1);
-        //        console.log(edge.getID());
-        //        console.log(edge.getSource());
-        //        console.log(edge.getTarget());
-
-        network.nodeArray.push(node1);
-        //        console.log(network.nodeArray.includes(node1));
-
-        network.setNodeInArray(node);
-        network.setNodeInArray(node2);
-        //        console.log(network.isNodeIncluded(node));
-        //        console.log(network.isNodeIncluded(node1));
-        //        console.log(network.getNodeArray());
-        network.edgeArray.push(edge);
-
-        console.log(node.getAdjacentVertexes());
-//        paintGraph(network);
-//     s  testCSGraph(network);
-        //        draw();
-    }
-//    createNetwork();
-}
+document.getElementById('fileInput').addEventListener('change', getFile);

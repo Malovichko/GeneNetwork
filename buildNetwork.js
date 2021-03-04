@@ -56,6 +56,3 @@ function moveNode(ellipse, text, x, y) {
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-
-
-

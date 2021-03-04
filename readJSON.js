@@ -1,4 +1,4 @@
-function readSingleFile(e) {
+function readSingleFileJSON(e) {
     var file = e.target.files[0];
     var contents = null;
     if (!file) {
@@ -7,14 +7,14 @@ function readSingleFile(e) {
     var reader = new FileReader();
     reader.onload = function (e) {
         contents = e.target.result;
-        displayContents(contents);
+        displayContentsJSON(contents);
     };
     reader.readAsText(file);
     var graph = JSON.parse(contents);
 //    drawGraphFromJSON(graph);
 }
 
-function displayContents(contents) {
+function displayContentsJSON(contents) {
     var data = JSON.parse(contents);
     /*var element = document.getElementById('file-content');
     element.textContent = contents;
@@ -36,8 +36,8 @@ function displayContents(contents) {
         //node.setAttribute('height', 40);
         node.setAttribute(entriesPos[0][0], entriesPos[0][1]);
         node.setAttribute(entriesPos[1][0], entriesPos[1][1]);
-        console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
-        console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
+        // console.log(entriesPos[0][0] + " " + entriesPos[0][1]);
+        // console.log(entriesPos[1][0] + " " + entriesPos[1][1]);
         network.setNodeInArray(node);
     }
 
@@ -58,48 +58,7 @@ function displayContents(contents) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
-
-    console.log(network);
     testCSGraph(network);
-//    node = data.elements.nodes[0].data;
-//    console.log(node);
-//    var keys = Object.keys(node);
-//    console.log(keys);
-//    console.log(data.elements.edges);
 }
 
-document.getElementById('file-input')
-    .addEventListener('change', readSingleFile, false);
-
-
-//function readSingleFile(e) {
-//  var file = e.target.files[0];
-//  if (!file) {
-//    return;
-//  }
-//  readTextFile(file, function(text){
-//    var data = JSON.parse(text);
-//    var element = document.getElementById('file-content');
-//    element.textContent = data;
-//    console.log("Bla")
-//    console.log(data);
-//});
-//}
-//document.getElementById('file-input').addEventListener('change', readSingleFile, false);
-//
-//
-//function readTextFile(file, callback) {
-//    var rawFile = new XMLHttpRequest();
-//    rawFile.overrideMimeType("application/json");
-//    rawFile.open("GET", file, true);
-//    rawFile.onreadystatechange = function() {
-//        if (rawFile.readyState === 4 && rawFile.status == "200") {
-//            callback(rawFile.responseText);
-//        }
-//    }
-//    rawFile.send(null);
-//}
-//
-//
-//
-//
+document.getElementById('file-input').addEventListener('change', readSingleFileJSON);
