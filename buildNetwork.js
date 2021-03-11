@@ -1,5 +1,5 @@
 function paintGraph(network) {
-    var draw = SVG().addTo('body').size(600, 600)
+    let draw = SVG().addTo('body').size(600, 600)
     let nodeArray = network.getNodeArray();
     let edgeArray = network.getEdgeArray();
     nodeArray.forEach(function (item, i, nodeArray) {
@@ -21,27 +21,27 @@ function paintGraph(network) {
 }
 
 function drawNode(draw, name, id, width, height, x, y) {
-    var group = draw.group()
-    var element = draw.element('title').words('node' + id);
-    var ellipse = draw.ellipse(width, height).fill('#f06').move(x, y);
+    let group = draw.group()
+    let element = draw.element('name').words('node' + id);
+    let ellipse = draw.ellipse(width, height).fill('#f06').move(x, y);
     //    console.log(ellipse.x());
     //    console.log('node = ' + draw.get(0).x());
-    var text = draw.text(name)
-    text.move(x + 20, y + 20).font({
+    let text = draw.text(name)
+    /*text.move(x + 20, y + 20).font({
         family: 'Helvetica',
         size: 25,
         anchor: 'middle',
         leading: '0.5em'
-    })
+    })*/
     group.add(ellipse)
     group.add(element)
-    group.add(text)
+    //group.add(text)
 }
 
 function drawEdge(draw, id, x1, y1, x2, y2) {
-    var group = draw.group()
-    var element = draw.element('title').words('edge' + id);
-    var line = draw.line(x1, y1, x2, y2);
+    let group = draw.group()
+    let element = draw.element('name').words('edge' + id);
+    let line = draw.line(x1, y1, x2, y2);
     line.stroke({
         color: '#000000',
         width: 3,
@@ -56,6 +56,3 @@ function moveNode(ellipse, text, x, y) {
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-
-
-

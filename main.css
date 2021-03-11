@@ -14,16 +14,35 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
+    max-width: 100vw;
+    display: flex;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#control {
+    max-width: 318px;
+    height: 100vh;
+}
+
+#menu {
+    padding: 2em 2em 4em;
+    height: fit-content;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    border-radius: 0 0 10px 0;
+}
+
+#fileList {
+    overflow: auto;
+    /* margin: 0; */
+    max-height: calc(100vh - 395px - 16px);
+}
+
+#cy {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 600;
     line-height: 1.3;
@@ -47,4 +66,50 @@ svg {
 
 .slider {
     width: 100%;
+}
+
+#context-menu {
+    position: absolute;
+    width: auto;
+    padding: 3px 0px;
+    padding-right: 1px;
+    margin: 0;
+    border: 1px solid #bbb;
+    display: none;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.6);
+    background: #fff;
+    z-index: 1;
+}
+.menu-item {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+#context-menu input {
+    background: none;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+    border: 0px;
+    white-space: nowrap;
+    padding: 3px 8px;
+}
+.menu-text {
+    margin-left: 25px;
+}
+#context-menu .menu-item input:hover {
+    background-color: #bebebe;
+}
+.menu-separator {
+    display:block;
+    margin: 5px 1px;
+    height:1px;
+    background-color: rgb(216, 215, 215);
+}
+#context-menu.show-menu, .menu-item:hover > .menu {
+    display: block;
 }

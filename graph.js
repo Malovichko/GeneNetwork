@@ -71,6 +71,10 @@ class Node {
         return this.id;
     }
 
+    setID(id) {
+        this.id = id;
+    }
+
     getAttributeFromName(attrName) {
         return this.attrMap.get(attrName);
     }

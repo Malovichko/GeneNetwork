@@ -5,15 +5,15 @@ function writeList(file) {
         let network = null;
         nodeAttrMap = new Map();
         entries.forEach(function (entry) {
-            var li = document.createElement("li");
-            var a = document.createElement("a");
-            var p = document.createElement("p");
-            var details = document.createElement("details");
-            var summary = document.createElement("summary");
+            let li = document.createElement("li");
+            let a = document.createElement("a");
+            let p = document.createElement("p");
+            let details = document.createElement("details");
+            let summary = document.createElement("summary");
             a.textContent = entry.filename;
             model.getEntryFile(entry, function (blob, blobURL) {
                 a.href = blobURL;
-                var reader = new FileReader();
+                let reader = new FileReader();
                 reader.onloadend = function () {
                     p.innerHTML = reader.result;
                     if (entry.filename == "CytoscapeSession-2020_10_29-20_35/networks/998-string%2Dhl%2Dnew%2Dwith_regulators.tsv.xgmml") {
@@ -25,12 +25,12 @@ function writeList(file) {
                         for (i = 0; i < nodes.length; i++) {
                             label = nodes[i];
                             id = label.substring(label.indexOf("id=") + 4);
-                            id = parseInt(id.split("\"")[0]);
+                            id = id.split("\"")[0];
                             label = label.substring(label.indexOf("label=") + 7);
                             label = label.split("\"")[0];
 
                             node = new Node(id);
-                            node.setAttribute('label', label);
+                            node.setAttribute('name', label);
                             node.setAttribute('width', 40);
                             node.setAttribute('height', 40);
                             network.setNodeInArray(node);
@@ -41,22 +41,22 @@ function writeList(file) {
                         for (i = 0; i < edges.length; i++) {
                             id = edges[i];
                             id = id.substring(id.indexOf("id=") + 4);
-                            id = parseInt(id.split("\"")[0]);
+                            id = id.split("\"")[0];
 
                             idNode1 = edges[i];
                             idNode1 = idNode1.substring(idNode1.indexOf("source=") + 8);
-                            idNode1 = parseInt(idNode1.split("\"")[0]);
+                            idNode1 = idNode1.split("\"")[0];
                             node1 = network.findNodeById(idNode1);
 
                             idNode2 = edges[i];
                             idNode2 = idNode2.substring(idNode2.indexOf("target=") + 8);
-                            idNode2 = parseInt(idNode2.split("\"")[0]);
+                            idNode2 = idNode2.split("\"")[0];
                             node2 = network.findNodeById(idNode2);
 
                             edge = new Edge(node1, node2, id);
                             network.setEdgeInArray(edge);
                         }
-//                        testCSGraph(network);
+                        testCSGraph(network);
                     }
 
                     if (entry.filename == "CytoscapeSession-2020_10_29-20_35/views/8108-8118-string%2Dhl%2Dnew%2Dwith_regulators.tsv%281%29.xgmml") {
@@ -66,15 +66,13 @@ function writeList(file) {
                         for (i = 0; i < nodes.length; i++) {
                             label = nodes[i];
                             id = label.substring(label.indexOf("nodeId=") + 8);
-                            id = parseInt(id.split("\"")[0]);
+                            id = id.split("\"")[0];
 
                             x = label.substring(label.indexOf("x=") + 3);
                             x = parseInt(x.split("\"")[0]);
-                            x = x / 8;
 
                             y = label.substring(label.indexOf("y=") + 3);
                             y = parseInt(y.split("\"")[0]);
-                            y = (y + 1200) / 4;
 
                             node = network.findNodeById(id);
                             node.setAttribute('x', x);
@@ -110,7 +108,7 @@ function writeList(file) {
     });
 }
 
-var model = (function () {
+let model = (function () {
     return {
         getEntries: function (file, onend) {
             zip.createReader(new zip.BlobReader(file), function (zipReader) {
@@ -118,11 +116,11 @@ var model = (function () {
             }, onerror);
         },
         getEntryFile: function (entry, onend, onprogress) {
-            var writer, zipFileEntry;
+            let writer, zipFileEntry;
 
             function getData() {
                 entry.getData(writer, function (blob) {
-                    var blobURL = URL.createObjectURL(blob);
+                    let blobURL = URL.createObjectURL(blob);
                     onend(blob, blobURL);
                 }, onprogress);
             }
@@ -133,60 +131,12 @@ var model = (function () {
 })();
 
 function getFile(e) {
-    var files = e.target.files;
+    let files = e.target.files;
     if (files.length == 1) {
-        var file = files[0];
-        var reader = new FileReader();
+        let file = files[0];
+        let reader = new FileReader();
         reader.onload = writeList(file);
     }
 }
 
-window.onload = function (e) {
-    zip.workerScriptsPath = "/lib/";
-    button = document.getElementById('fileInput');
-    button.addEventListener('change', getFile);
-
-    function createNetwork() {
-        let network = new Network(1);
-        //        console.log(network.getID());
-        network.setAttribute("Pb|cka", 12);
-        //        console.log(network.getAttributeFromName("Pb|cka"));
-
-        let node = new Node(1);
-        let node1 = new Node(2);
-        let node2 = new Node(3);
-        node.setAttribute("name", "Seq12");
-        node.setAttribute("width", 200);
-        node.setAttribute("height", 100);
-        node1.setAttribute("name", "Arn34");
-        node1.setAttribute("width", 200);
-        node1.setAttribute("height", 100);
-        node2.setAttribute("name", "Ghy0");
-        node2.setAttribute("width", 200);
-        node2.setAttribute("height", 100);
-
-        //        console.log( "id 1, 2 " + node.getID() + " " +  node1.getID());
-        //        console.log(node.getAttributeFromName("name"));
-
-        let edge = new Edge(node1, node, 1);
-        //        console.log(edge.getID());
-        //        console.log(edge.getSource());
-        //        console.log(edge.getTarget());
-
-        network.nodeArray.push(node1);
-        //        console.log(network.nodeArray.includes(node1));
-
-        network.setNodeInArray(node);
-        network.setNodeInArray(node2);
-        //        console.log(network.isNodeIncluded(node));
-        //        console.log(network.isNodeIncluded(node1));
-        //        console.log(network.getNodeArray());
-        network.edgeArray.push(edge);
-
-        console.log(node.getAdjacentVertexes());
-//        paintGraph(network);
-//     s  testCSGraph(network);
-        //        draw();
-    }
-//    createNetwork();
-}
+document.getElementById('cys-input').addEventListener('change', getFile);

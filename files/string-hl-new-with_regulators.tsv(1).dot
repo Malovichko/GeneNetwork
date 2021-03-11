@@ -1,0 +1,119 @@
+graph "string-hl-new-with_regulators.tsv(1)" {
+label = "string-hl-new-with_regulators.tsv(1)"
+labelloc = t
+bgcolor = "#FFFFFFFF"
+splines = "false"
+outputorder = "edgesfirst"
+esep = "0"
+pad = "2"
+node [label = "",penwidth = "5.000000",height = "0.833333",width = "0.833333",tooltip = "",color = "#000000FF",fillcolor = "#FFFFFFFF",shape = "ellipse",style = "solid,filled",fontname = "Dialog.plain",fontsize = "9",fontcolor = "#000000FF",fixedsize = "true",labelloc = "t"]
+edge [label = "",penwidth = "1.500000",tooltip = "",arrowhead = "none",arrowtail = "none",color = "#404040FF",fontname = "Dialog.plain",fontsize = "10",fontcolor = "#000000FF",style = "solid",dir = "both"]
+"HBI1§96" [label = "HBI1",height = "1.250000",width = "1.250000",pos = "2621.555638,394.426818",fillcolor = "#3333FFFF",fontsize = "14"]
+"TCP11§97" [label = "TCP11",height = "1.250000",width = "1.250000",pos = "4098.202588,687.726090",fillcolor = "#3333FFFF",fontsize = "14"]
+"ELF4§98" [label = "ELF4",pos = "3309.911316,-446.210822"]
+"PIN3§99" [label = "PIN3",pos = "3424.866055,1015.841228"]
+"PYE§100" [label = "PYE",height = "1.666667",width = "1.666667",pos = "3856.902696,573.208431",fillcolor = "#3333FFFF",fontsize = "18"]
+"WRKY18§101" [label = "WRKY18",pos = "3941.381193,284.769211",fillcolor = "#FF0000FF"]
+"PAR1§102" [label = "PAR1",height = "1.250000",width = "1.250000",pos = "2848.941038,254.298976",fillcolor = "#3333FFFF",fontsize = "14"]
+"ckl4§71" [label = "ckl4",pos = "3031.042452,-3.687071",fillcolor = "#3333FFFF"]
+"SAL1§103" [label = "SAL1",pos = "3304.536422,777.386386",fillcolor = "#999999FF"]
+"ckl3§72" [label = "ckl3",pos = "2840.119572,-246.295942"]
+"PIF7§104" [label = "PIF7",pos = "3948.885703,180.772001"]
+"ACBP5§73" [label = "ACBP5",pos = "2934.466056,3.581375"]
+"AT5G23280§105" [label = "AT5G23280",pos = "4218.852535,744.984919",fillcolor = "#3333FFFF"]
+"HY5§74" [label = "HY5",height = "1.666667",width = "1.666667",pos = "3540.542314,581.623944",fillcolor = "#FF0000FF",fontsize = "18"]
+"FCAALL.134§106" [label = "FCAALL.134",pos = "3805.308630,667.742592"]
+"MPK19§75" [label = "MPK19",pos = "3531.997712,952.701167",fillcolor = "#FF0000FF"]
+"AT1G25220§107" [label = "AT1G25220",height = "1.666667",width = "1.666667",pos = "3943.111385,58.125057",fillcolor = "#3333FFFF",fontsize = "18"]
+"AT3G01490§76" [label = "AT3G01490",height = "1.250000",width = "1.250000",pos = "3682.324209,1173.476792",fillcolor = "#999999FF",fontsize = "14"]
+"PAP3§108" [label = "PAP3",height = "1.250000",width = "1.250000",pos = "3661.923588,-0.363178",fillcolor = "#3333FFFF",fontsize = "14"]
+"KDR§77" [label = "KDR",pos = "3663.122301,323.861743"]
+"PRMT11§109" [label = "PRMT11",height = "2.083333",width = "2.083333",pos = "2976.080640,334.862396",fillcolor = "#999999FF",fontsize = "22"]
+"HFR1§78" [label = "HFR1",pos = "3430.480756,219.023185",fillcolor = "#FF0000FF"]
+"PHYD§110" [label = "PHYD",pos = "3871.311702,-212.919258"]
+"PHYB§79" [label = "PHYB",pos = "3524.686345,-273.131810"]
+"AT5G48560§111" [label = "AT5G48560",pos = "3898.109636,471.711632"]
+"PIF3§80" [label = "PIF3",pos = "3676.427322,251.014534"]
+"PAP17§112" [label = "PAP17",height = "2.083333",width = "2.083333",pos = "3912.946839,-95.662360",fillcolor = "#FF0000FF",fontsize = "22"]
+"FHL§81" [label = "FHL",pos = "3166.788818,167.568164"]
+"TZP§113" [label = "TZP",pos = "3432.331185,-683.599338"]
+"CIB1§82" [label = "CIB1",pos = "4150.947471,557.810187"]
+"PAT3§83" [label = "PAT3",pos = "3192.801763,555.964033"]
+"CRY1§84" [label = "CRY1",pos = "3373.659797,-408.864992",fillcolor = "#3333FFFF"]
+"BBX16§85" [label = "BBX16",height = "1.250000",width = "1.250000",pos = "3608.843730,894.482543",fillcolor = "#999999FF",fontsize = "14"]
+"BHLH101§86" [label = "BHLH101",height = "1.666667",width = "1.666667",pos = "3696.978210,810.234959",fillcolor = "#999999FF",fontsize = "18"]
+"PHYA§87" [label = "PHYA",height = "1.250000",width = "1.250000",pos = "3358.931986,-81.107369",fillcolor = "#999999FF",fontsize = "14"]
+"GBF2§88" [label = "GBF2",pos = "3764.180642,728.565792",fillcolor = "#FF0000FF"]
+"PIL5§89" [label = "PIL5",pos = "3681.830569,176.136543",fillcolor = "#3333FFFF"]
+"SCL13§90" [label = "SCL13",height = "1.666667",width = "1.666667",pos = "3617.444805,-558.733188",fillcolor = "#FF0000FF",fontsize = "18"]
+"AT2G26190§91" [label = "AT2G26190",height = "1.666667",width = "1.666667",pos = "3822.672903,-310.230201",fillcolor = "#FF0000FF",fontsize = "18"]
+"CLPB3§92" [label = "CLPB3",height = "1.250000",width = "1.250000",pos = "3754.107680,-413.608285",fillcolor = "#999999FF",fontsize = "14"]
+"ARR4§93" [label = "ARR4",pos = "3695.101612,-483.834264",fillcolor = "#3333FFFF"]
+"AT5G35735§94" [label = "AT5G35735",height = "2.083333",width = "2.083333",pos = "2834.126942,104.514179",fillcolor = "#FF0000FF",fontsize = "22"]
+"LAF1§95" [label = "LAF1",pos = "3343.583305,430.893584"]
+"PHYB§79" -- "PIF3§80" 
+"SAL1§103" -- "PAT3§83" 
+"PHYB§79" -- "ARR4§93" 
+"SAL1§103" -- "PIN3§99" 
+"PHYB§79" -- "PHYA§87" 
+"PIF7§104" -- "PHYB§79" 
+"PHYB§79" -- "PAP3§108" 
+"PIF7§104" -- "PIF3§80" 
+"PHYB§79" -- "HFR1§78" 
+"PIF7§104" -- "PIL5§89" 
+"PIF3§80" -- "HFR1§78" 
+"AT5G23280§105" -- "TCP11§97" 
+"FHL§81" -- "PHYA§87" 
+"AT1G25220§107" -- "PAP3§108" 
+"FHL§81" -- "PAT3§83" 
+"PAP3§108" -- "PHYA§87" 
+"FHL§81" -- "LAF1§95" 
+"PAP3§108" -- "PIF3§80" 
+"FHL§81" -- "HFR1§78" 
+"PAP3§108" -- "HFR1§78" 
+"PAT3§83" -- "PHYA§87" 
+"PHYD§110" -- "PHYB§79" 
+"PAT3§83" -- "PIF3§80" 
+"PHYD§110" -- "PIF3§80" 
+"PAT3§83" -- "HFR1§78" 
+"PHYD§110" -- "PAP3§108" 
+"CRY1§84" -- "PHYA§87" 
+"PHYD§110" -- "ELF4§98" 
+"CRY1§84" -- "PHYB§79" 
+"AT5G48560§111" -- "CIB1§82" 
+"PHYA§87" -- "PIF3§80" 
+"AT5G48560§111" -- "HY5§74" 
+"PHYA§87" -- "HFR1§78" 
+"PAP17§112" -- "PAP3§108" 
+"PIL5§89" -- "HFR1§78" 
+"PAP17§112" -- "AT1G25220§107" 
+"ACBP5§73" -- "ckl3§72" 
+"PIL5§89" -- "PHYB§79" 
+"TZP§113" -- "ELF4§98" 
+"HY5§74" -- "PHYB§79" 
+"PIL5§89" -- "PHYA§87" 
+"HY5§74" -- "PIF3§80" 
+"PIL5§89" -- "PIF3§80" 
+"HY5§74" -- "PIL5§89" 
+"PIL5§89" -- "PAP3§108" 
+"HY5§74" -- "FCAALL.134§106" 
+"SCL13§90" -- "PHYB§79" 
+"HY5§74" -- "LAF1§95" 
+"AT2G26190§91" -- "PHYB§79" 
+"HY5§74" -- "HFR1§78" 
+"CLPB3§92" -- "PHYB§79" 
+"HY5§74" -- "MPK19§75" 
+"LAF1§95" -- "HFR1§78" 
+"HY5§74" -- "BBX16§85" 
+"LAF1§95" -- "PAT3§83" 
+"HY5§74" -- "BHLH101§86" 
+"TCP11§97" -- "PYE§100" 
+"HY5§74" -- "GBF2§88" 
+"ELF4§98" -- "PHYA§87" 
+"HY5§74" -- "PYE§100" 
+"ELF4§98" -- "PHYB§79" 
+"MPK19§75" -- "AT3G01490§76" 
+"WRKY18§101" -- "PIF3§80" 
+"KDR§77" -- "HFR1§78" 
+"PAR1§102" -- "HBI1§96" 
+}
