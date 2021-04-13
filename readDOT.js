@@ -1,18 +1,16 @@
 function readSingleFileDOT(e) {
     let file = e.target.files[0];
-    let contents = null;
-    if (!file) {
-        return;
-    }
+    if (!file) return;
     let reader = new FileReader();
     reader.onload = function (e) {
         contents = e.target.result;
-        displayContentsDOT(contents);
+        displayContentsDOT(contents, 'cy');
     };
     reader.readAsText(file);
+    clearInput();
 }
 
-function displayContentsDOT(contents) {
+function displayContentsDOT(contents, contner) {
     let data = graphlibDot.read(contents);
     network = new Network(1);
 
@@ -51,7 +49,9 @@ function displayContentsDOT(contents) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
-    testCSGraph(network);
+    testCSGraph(network, contner);
+    return network;
 }
 
-document.getElementById('dot-input').addEventListener('change', readSingleFileDOT);
+input = document.getElementById('dot-input');
+if (input) input.addEventListener('change', readSingleFileDOT);

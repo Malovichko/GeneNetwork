@@ -59,28 +59,36 @@ function drawGraphFromJSON() {
 
 }
 
+function clearInput() {
+  document.getElementsByTagName('input').forEach(element => {
+    if (element.getAttribute('type') == 'file') element.value = '';
+  });
+}
+
 let cy = null;
 let Shift = false;
-function testCSGraph(network) {
+function testCSGraph(network, contner) {
   let nodeArray = network.getNodeArray();
   let edgeArray = network.getEdgeArray();
   let curve_style = '';
   let layout_style = '';
+  let taxi_direction = '';
 
   if (network.getAttributeFromName('type') == 'nwk') {
     curve_style = 'taxi';
     layout_style = 'dagre';
+    taxi_direction = 'horizontal';
   }
 
   cy = cytoscape({
-    container: document.getElementById('cy'),
+    container: document.getElementById(contner),
     style: [
       {
         selector: 'node',
         style: {
-          'label': 'data(name)',
-          "text-valign": "center",
-          "text-halign": "center"
+          'label' : 'data(name)',
+          'text-valign' : 'center',
+          'text-halign' : 'center',
         }
       },
       {
@@ -90,7 +98,8 @@ function testCSGraph(network) {
           // 'line-color': '#ccc',
           // 'target-arrow-color': '#ccc',
           // 'target-arrow-shape': 'triangle',
-          'curve-style': curve_style
+          'curve-style' : curve_style,
+          'taxi-direction' : taxi_direction,
         }
       }
     ],
@@ -132,7 +141,7 @@ function testCSGraph(network) {
         id: item.getID(),
         source: item.getSource().getID(),
         target: item.getTarget().getID(),
-        name : item.getAttributeFromName('name')
+        name : item.getAttributeFromName('name'),
       }
     });
     // console.log(item.getID() + " " + item.getSource().getID() + " " + item.getTarget().getID());
@@ -144,10 +153,6 @@ function testCSGraph(network) {
     cy.center();
     cy.fit();
     cy.resize();
-  });
-  
-  document.getElementsByTagName('input').forEach(element => {
-    if (element.getAttribute('type') == 'file') element.value = '';
   });
 
   function contextTap(event) {
@@ -184,8 +189,11 @@ function prepareColor(color) {
 
 function setLayout(layout_style, layout_obj) {
   if (layout_style != '') {
+    let rankDir = '';
+    if (layout_style == 'dagre') rankDir = 'LR';
     let layout = layout_obj.layout({
       name: layout_style,
+      rankDir : rankDir,
       // infinite: true,
     });
     layout.run();

@@ -1,20 +1,19 @@
 function readSingleFileJSON(e) {
     let file = e.target.files[0];
     let contents = null;
-    if (!file) {
-        return;
-    }
+    if (!file) return;
     let reader = new FileReader();
     reader.onload = function (e) {
         contents = e.target.result;
-        displayContentsJSON(contents);
+        displayContentsJSON(contents, 'cy');
     };
     reader.readAsText(file);
+    clearInput();
     let graph = JSON.parse(contents);
 //    drawGraphFromJSON(graph);
 }
 
-function displayContentsJSON(contents) {
+function displayContentsJSON(contents, contner) {
     let data = JSON.parse(contents);
     /*let element = document.getElementById('file-content');
     element.textContent = contents;*/
@@ -52,7 +51,9 @@ function displayContentsJSON(contents) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
-    testCSGraph(network);
+    testCSGraph(network, contner);
+    return network;
 }
 
-document.getElementById('json-input').addEventListener('change', readSingleFileJSON);
+input = document.getElementById('json-input');
+if (input) input.addEventListener('change', readSingleFileJSON);
