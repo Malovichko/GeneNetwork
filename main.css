@@ -24,15 +24,16 @@ a {
 
 #control {
     max-width: 318px;
-    height: 100vh;
-}
-
-#menu {
-    padding: 2em 2em 4em;
+    max-height: 100vh;
+    padding: 2em 2em 3em;
     height: fit-content;
     border-right: solid black 1px;
     border-bottom: solid black 1px;
     border-radius: 0 0 10px 0;
+}
+
+#prognose {
+    margin: 20px auto 0px;
 }
 
 #fileList {

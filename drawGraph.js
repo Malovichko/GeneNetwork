@@ -162,6 +162,8 @@ function testCSGraph(network, contner) {
     }
   }
   cy.on('cxttap', contextTap);
+
+  return cy;
 }
 
 function rec(layout) {
@@ -212,16 +214,16 @@ function duplicate() {
       },
       position: { x: element.position().x, y: element.position().y }
     });
-    if (element._private.style["border-color"] != undefined) color = element._private.style["border-color"].strValue;
-    if (element._private.style["background-color"] != undefined) fillColor = element._private.style["background-color"].strValue;
-    if (element._private.style["color"] != undefined) fontColor = element._private.style["color"].strValue;
+    if (element.style('border-color') != undefined) color = element.style('border-color');
+    if (element.style('background-color') != undefined) fillColor = element.style('background-color');
+    if (element.style('color') != undefined) fontColor = element.style('color');
     width = element.style().width;
     height = element.style().height;
     el.style('background-color', fillColor);
     el.style('border-color', color);
     if (color != undefined) el.style('border-width', 1);
     if (fillColor != fontColor) el.style('color', fontColor);
-    if (element._private.style["font-size"] != undefined) el.style('font-size', element._private.style["font-size"].value);
+    if (element.style('font-size') != undefined) el.style('font-size', element.style('font-size'));
     if (width == undefined) width = height; if (height == undefined) height = width;
     if (width != undefined) {
       el.style('width', width);

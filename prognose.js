@@ -10,18 +10,17 @@ function getNetwork(ext, contents, contner) {
     else return null;
 }
 
-let ntwk = null;
+let ntwk; let backup = [];
 let trees = [];
 
 function readSingleFile(e) {
     tgt = e.target.id;
     if (tgt == 'gene-input-1' && ntwk) ntwk = null;
-    contner = '';
     if (!ntwk) contner = 'cy';
     else contner = 'cy'+tgt.substr(10, tgt.length-1);
-    let file = e.target.files[0];
+    file = e.target.files[0];
     if (!file) return;
-    let reader = new FileReader();
+    reader = new FileReader();
     reader.onload = function (e) {
         contents = e.target.result;
         network = getNetwork(getFileExtension(file.name), contents, contner);
@@ -30,12 +29,43 @@ function readSingleFile(e) {
     reader.readAsText(file);
 }
 
+function prognose() {
+    ntwk.nodes().forEach((ntwkNode) => {
+        ntwkNode.data('name', backup[ntwkNode.id()]);
+    });
+    console.log(' ');
+    ntwk.nodes().forEach((ntwkNode) => {
+        ntwkNodeName = ntwkNode.data('name');
+        for (i = 0; i < trees.length; i++) {
+            tree = trees[i];
+            treeNodeSelected = tree.$(':selected');
+            if (treeNodeSelected.length == 1) {
+                if (tree.nodes('[name = "'+ntwkNodeName+'"]').length > 0) {
+                    ntwkNode.data('name', treeNodeSelected.data('name'));
+                }
+            }
+        }
+    });
+    //clearInput();
+    //document.getElementById('cys').remove();
+    //testCSGraph(ntwk, 'cy');
+}
+
 function displayPrognose(network, tgt) {
     if (!ntwk) {
         ntwk = network;
-        nodes = network.nodeArray;
+        nodes = ntwk.nodes();
+        ntwk.nodes().forEach((ntwkNode) => {
+            backup[ntwkNode.id()] = ntwkNode.data('name');
+        });
         menu = document.getElementById('menu');
-        menu.getElementsByTagName('h2')[1].style.display = 'block';
+        inputs = menu.getElementsByTagName('input');
+        if (inputs.length > 1) {
+            for (i = inputs.length-1; i > 0; i--) {
+                document.querySelector('#gene-tree-'+(i-1)).remove();
+            }
+        }
+        else menu.getElementsByTagName('h2')[1].style.display = 'block';
         for (i = 0; i < nodes.length; i++) {
             input = document.createElement('input');
             input.setAttribute('type', 'file'); input.setAttribute('id', 'gene-tree-'+i); input.setAttribute('accept', document.getElementById('gene-input-1').getAttribute('accept'));
@@ -48,34 +78,13 @@ function displayPrognose(network, tgt) {
     } else {
         i = tgt.substr(10, tgt.length-1);
         trees[i] = network;
-    }
-    if (trees.length == ntwk.nodeArray.length) {
-        
-        ntwk.nodeArray.forEach((ntwkNode) => {
-            try {
-                ntwkNodeName = ntwkNode.attrMap.get("name");
-                for (i = 0; i < trees.length; i++) {
-                    tree = trees[i];
-                    tree.nodeArray.forEach((treeNode) => {
-                        treeNodeName = treeNode.attrMap.get("name");
-                        if (ntwkNodeName == treeNodeName) {
-                            parrent = treeNode.adjacentVertex[0];
-                            adjNodes = parrent.adjacentVertex;
-                            adjNodes.forEach((adjNode) => {
-                                if (adjNode.adjacentVertex.length == 1 && adjNode != treeNode) {
-                                    ntwkNode.attrMap.set("name", adjNode.attrMap.get("name"));
-                                    throw new Error();
-                                }
-                            });
-                        }
-                    });
-                }
-            } catch (e) {};
+        ntwk.nodes().forEach((ntwkNode) => {
+            ntwkNodeName = ntwkNode.data('name');
+            treeNode = network.nodes('[name = "'+ntwkNodeName+'"]');
+            if (treeNode.length > 0) treeNode.select();
         });
-        clearInput();
-        document.getElementById('cys').remove();
-        testCSGraph(ntwk, 'cy');
     }
+    if (trees.length == ntwk.nodes().length) document.getElementById('prognose').style.display = 'block';
 }
 
 input = document.getElementById('gene-input-1');

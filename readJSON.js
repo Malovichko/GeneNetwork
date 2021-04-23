@@ -51,7 +51,7 @@ function displayContentsJSON(contents, contner) {
         edge = new Edge(node1, node2, id);
         network.setEdgeInArray(edge);
     }
-    testCSGraph(network, contner);
+    return testCSGraph(network, contner);
     return network;
 }
 

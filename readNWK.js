@@ -78,7 +78,7 @@ function displayContentsNWK(contents, contner) {
             }
         }
     }
-    testCSGraph(network, contner);
+    return testCSGraph(network, contner);
     return network;
 }
 
