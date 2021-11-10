@@ -55,26 +55,42 @@ function displayPrognose(network, tgt) {
     if (!ntwk) {
         ntwk = network;
         nodes = ntwk.nodes();
-        ntwk.nodes().forEach((ntwkNode) => {
+        nodes.forEach((ntwkNode) => {
             backup[ntwkNode.id()] = ntwkNode.data('name');
         });
         menu = document.getElementById('menu');
         inputs = menu.getElementsByTagName('input');
         if (inputs.length > 1) {
             for (i = inputs.length-1; i > 0; i--) {
-                document.querySelector('#gene-tree-'+(i-1)).remove();
+                document.querySelector(`#gene-tree-${i - 1}`).remove();
             }
         }
         else menu.getElementsByTagName('h2')[1].style.display = 'block';
-        for (i = 0; i < nodes.length; i++) {
-            input = document.createElement('input');
-            input.setAttribute('type', 'file'); input.setAttribute('id', 'gene-tree-'+i); input.setAttribute('accept', document.getElementById('gene-input-1').getAttribute('accept'));
-            menu.append(input);
+        let i = 0;
+        let idsStr = '';
+        nodes.forEach(node => idsStr += `${node._private.data.name},`);
+        data = getData(`genes?ids=${idsStr}`);
+        nodes.forEach(node => {
+            const label = document.createElement('label');
+            const input = document.createElement('input');
+            input.setAttribute('type', 'file'); input.setAttribute('id', `gene-tree-${i}`);
+            input.setAttribute('accept', document.getElementById('gene-input-1').getAttribute('accept'));
+            label.append(input);
+            const name = node._private.data.name;
+            if (name) {
+                const species = data.filter(e => e.gene_id === name);
+                let speciesName = '';
+                if (species.length > 0)  speciesName = ` - ${specieses.filter(e => e.species === species[0].species)[0].common_name}`;
+                label.innerHTML += `${name}${speciesName}`;
+            }
+            menu.append(label);
             input.addEventListener('change', readSingleFile);
-            input = document.createElement('div');
-            input.setAttribute('id', 'cy'+i); input.style.height = 100/nodes.length+'%';
-            document.getElementById('cys').append(input);
-        }
+            const divTree = document.createElement('div');
+            divTree.setAttribute('id', `cy${i}`);
+            divTree.style.height = `${100 / divTree.length}%`;
+            document.getElementById('cys').append(divTree);
+            i++;
+        });
     } else {
         i = tgt.substr(10, tgt.length-1);
         trees[i] = network;
